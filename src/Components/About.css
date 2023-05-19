@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@100;300;400;700;900&family=Ubuntu+Mono:wght@400;700&display=swap');
+
+h1,h2,h3,h4,h5,h6,a,p{
+    font-family: 'Montserrat', sans-serif;
+}
+h1,h2,h3,h4{
+    font-weight: 900;
+}
+h5,h6,a,p{
+    font-weight: 300;
+}
+:root{
+    --colorOne: #19456b;
+    --colorTwo: #475BE8;
+    --colorTwo2: #16c79a;
+}
+.center-vertical{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+.about-us-section{
+    width: 100%;
+    padding: calc(2% + 90px) 0px;
+}
+.about-us-section .img-head{
+    position: relative;
+    overflow: hidden;
+}
+.about-us-section .img-head img{
+    width: 100%;
+    transition: transform .3s;
+}
+.about-us-section .img-head:hover img{
+    transform: scale(1.2);
+}
+.about-us-section .img-head::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, var(--colorOne), var(--colorOne));
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .5;
+}
+.about-us-section .text-head{
+    font-size: 28px;
+    color: var(--colorTwo);
+}
+.about-us-section .break-small{
+    width: 80px;
+    height: 3px;
+    background-color: var(--colorTwo);
+}
+.about-us-section .text-para{
+    font-size: 16px;
+    color: #444;
+}
+/* .about-us-section .box{
+    background-color: var(--colorTwo);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.about-us-section .box i{
+    font-size: 42px;
+}
+.about-us-section .box h4{
+    font-size: 14px;
+}
+.about-us-section .box p{
+    font-size: 22px;
+}
+
+.about-us-section .box::after,
+.about-us-section .box::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fff5;
+    border-radius: 50%;
+    transition: transform .3s;
+}
+
+.about-us-section .box::after{
+    left: -50px;
+    top: -50px;
+}
+.about-us-section .box::before{
+    right: -50px;
+    bottom: -50px;
+}
+
+.about-us-section .box:hover::after,
+.about-us-section .box:hover::before{
+    transform: scale(1.2);
+} */
